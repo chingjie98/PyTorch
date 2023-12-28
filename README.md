@@ -14,3 +14,17 @@ Here are the general steps to a PyTorch deep learning process. <br>
 - backward pass: gradients
 - update weights
 
+Learnt about how softmax layer and cross entropy loss works as well. 
+Softmax essentially squeeze the output to be between 0 and 1, so that we are able to get the probabilities from the raw scores (logit).
+
+<img src="https://github.com/chingjie98/PyTorch/assets/35895182/9fb689ce-e938-4a9e-97ec-b16c5b0c0eb2" width=50% height=50%><br><br>
+
+Then, the cross entropy loss measures the difference between the predicted probabilities with the actual label. 
+This works primarily with multiclass prediction problems. For binary, we need to use BCELoss which is Binary Cross Entropy Loss. 
+
+<img src="https://github.com/chingjie98/PyTorch/assets/35895182/f0adbed0-cefd-4c65-be1a-1fd0ea80fe08" width=50% height=50%><br><br>
+
+Several things to take note regarding the nn.CrossEntropLoss module however. 
+<img src="https://github.com/chingjie98/PyTorch/assets/35895182/8480344c-b05f-4ec4-9820-e550338bec5f" width=50% height=50%><br><br>
+
+
